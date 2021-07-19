@@ -30,8 +30,14 @@ section.alternate-background {
   color: #fff;
 }
 
-main img {
-  width: 100px;
+img {
+  width: 335px;
+  height: 220px;
+}
+
+.about-img2 {
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 /* ---  Groups & Items --- */

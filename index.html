@@ -39,11 +39,20 @@
 <section id="search">
   <form>
     <label for="location">Location</label>
-    <input for="location" type="text" name="location" />
+    <input for="location" type="text" name="location" placeholder="Search destination"/>
     <label for="date">Arrive</label>
     <input for="date" type="date" name="arrival" />
     <label for="date">Depart</label>
     <input for="date" type="date" name="departure" />
+      <div>
+        <p>Type</p>
+        <select name="types" size="1">
+          <option value="apartment">Apartment</option>
+          <option value="house">House</option>
+          <option value="villa">Villa</option>
+        </select>
+      </div>
+      <button type="search">Search</button>
   </form>
   
 </section>
@@ -56,7 +65,7 @@
           alt="Thinkfulbnb - Vacation rental pool"
         />
 
-        <img
+        <img class="about-img2"
           src="images/vacation-rental-inside-stone.png"
           alt="Thinkfulbnb - Vacation rental inside stone"
         />
