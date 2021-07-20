@@ -59,13 +59,15 @@ img {
 
 header {
   background-color: #ff385c;
-  padding: 20px 20px 0 20px;
+  padding: 20px;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
   font-family: "Pangolin", cursive;
-  font-size: 72px;
+  font-size: 60px;
   color: #fff;
 }
 
@@ -73,18 +75,22 @@ header nav ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-bottom: 20px;
+  width: 100%;
   font-size: 22px;
+  
+  padding: 0px;
 }
 
 header nav ul li {
   list-style-type: none;
+ 
 }
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
-  padding: 0 20px 0 0;
+  padding: 10px;
+  text-align: center;
 }
 
 header nav ul li a:hover {
@@ -96,6 +102,13 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-item {
+  justify-content: space-between;
+  display: flex;
 }
 
 form label {
@@ -110,13 +123,8 @@ form input {
   width: 190px;
 }
 
-/*location {
-  margin-left: 80px;
-}*/
 
 form select {
-  margin-left: 80px;
-  margin-right: 0px;
   margin-bottom: 20px;
   width: 190px;
 }
@@ -151,9 +159,9 @@ footer p {
     font-size: 50px;
   }
 
-  header nav ul#menu {
-    justify-content: right;
-    text-align: right;
+  header {
+    justify-content: space-between;
+    flex-direction: row;
   }
 
   .group {
@@ -179,5 +187,14 @@ footer p {
   form {
     display: flex;
     flex-direction: row;
+  }
+
+  .form-item {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  form button {
+    flex: 1;
   }
 }
